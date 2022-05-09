@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block subtitle %}
+    <strong>미래 기후 예측</strong>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <form action="/menu1" method="post">
+                <table class ="table table-borderless">
+                    <td><input type="text" class="form-control"  id="index" name="year" placeholder="2023"/></td>
+                    <br>
+                    <td><button type="submit" class="btn btn-primary mr-2">실행</button></td>
+                </table>
+            </form>
+        </div>
+    <div class="col-1"></div>
+    </div>
+{% endblock %}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Data Gap{% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="{{url_for('static', filename='img/favicon.ico')}}">
+    <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+    {% block additional_head %}{% endblock %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <script type="text/javascript">
+                alert("{{messages[0]}}");
+            </script>
+        {% endif %}
+    {% endwith %}
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <!-- <a class="navbar-brand" style="margin-left:50px;margin-right:100px;" href="#">
+            <img src="{{url_for('static', filename='img/logo.png')}}" alt="Logo" style="height:45px;">
+        </a> -->
+
+        <!-- Links -->
+        <ul class="nav nav-pills mr-auto">
+            <li class="nav-item mr-5">
+                <a class="nav-link {% if menu.home %}active{% endif %}" 
+                   href="{% if menu.home %}#{% else %}/{% endif %}">
+                    <i class="fa fa-home"></i> Home
+                </a>
+            </li>
+        </ul>
+        <nav class="navbar navbar-center">
+            <span class="navbar-text">
+                <strong>{% block heading %}기후 데이터를 이용한 대한민국의 미래 기후 예측과 작물 추천{% endblock %}</strong>
+            </span>
+        </nav>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-2">
+                <ul class="nav flex-column nav-pills">
+                    <div class="dropdown-divider"></div>
+                    <li class="nav-item">
+                        <a class="nav-link {% if menu.menu1 %}active{% endif %}" 
+                           href="{% if menu.menu1 %}#{% else %}/menu1{% endif %}">미래 기후 예측</a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li class="nav-item">
+                        <a class="nav-link {% if menu.menu2 %}active{% endif %}" 
+                           href="{% if menu.menu2 %}#{% else %}/menu2{% endif %}">미래 작물 추천</a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </div>
+            <div class="col-10">
+                <h3>{% block subtitle %}{% endblock %}</h3>
+                <hr>
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>  
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center fixed-bottom">
+        <span class="navbar-text">
+            Copyright &copy; 2022 B반 세미 프로젝트2조 데이터차이(권기일, 김민중, 송민성, 신재웅, 원동찬). All rights reserved.
+        </span>
+    </nav>
+    {% block additional_body %}
+    {% endblock %}
+</body>
+</html>

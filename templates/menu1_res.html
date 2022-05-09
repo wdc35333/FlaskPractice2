@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block subtitle %}
+    <strong>메뉴 1</strong> - 결과
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <table class="table">
+                <tr>
+                    <td>선택년도</td>
+                    <td>{{year}}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button class="btn btn-primary" 
+                                onclick="location.href='/menu1'">재실행</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    <div class="col-1"></div>
+    </div>
+{% endblock %}
