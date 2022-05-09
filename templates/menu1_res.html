@@ -8,8 +8,14 @@
         <div class="col-10">
             <table class="table">
                 <tr>
-                    <td>선택년도</td>
-                    <td>{{year}}</td>
+                    {% set list = month.split('-') %}
+                    {% if temp == 'temp_min' %}
+                        <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 최저기온: {{result}}</h3>
+                    {% elif temp == 'temp_max' %}
+                        <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 최고기온: {{result}}</h3>
+                    {% elif temp == 'temperature' %}
+                        <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 평균기온: {{result}}</h3>
+                    {% endif %}
                 </tr>
                 <tr>
                     <td colspan="2" style="text-align: center;">

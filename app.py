@@ -8,6 +8,7 @@ import os, joblib
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt 
+import pred_model
 
 app = Flask(__name__)
 
@@ -26,9 +27,21 @@ def menu1():    # 미래의 년도를 입력받아 해당 년도의 기후를 �
     if request.method == 'GET':
         return render_template('menu1.html', menu = menu)
     else:
-        year = request.form['year']
-        return render_template('menu1_res.html', menu = menu, year = year)
+        month = request.form['month']
+        region = request.form['region']
+        temp = request.form['temp']
+        pred_value = pred_model.weather_predict(region,str(month), temp)
+        return render_template('menu1_res.html', menu = menu, month = month, region=region, temp=temp, result = pred_value)
 
+@app.route('/menu2', methods=['GET', 'POST'])
+def menu2():    # 미래의 년도를 입력받아 해당 년도의 기후를 예측하고 해당 기후에 맞는 작물 추천 (folium을 이용한 지도 시각화)
+    menu = {'home':0, 'menu1':0, 'menu2':1}
+    if request.method == 'GET':
+        return render_template('menu2.html', menu = menu)
+    else:
+        month = request.form['month']
+        temp = request.form['temp']
+        return render_template('menu2_res.html', menu = menu, month = month, temp=temp)
 
 
 if __name__ == '__main__':
