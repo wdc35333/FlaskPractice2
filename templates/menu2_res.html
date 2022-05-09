@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block subtitle %}
+    <strong>미래 작물 추천</strong>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <form action="/menu2" method="post">
+                <table class ="table table-borderless">
+                   <td>
+                    <h3>{{month}} {{temp}}</h3>
+                   </td>
+                </table>
+            </form>
+        </div>
+    <div class="col-1"></div>
+    </div>
+{% endblock %}
