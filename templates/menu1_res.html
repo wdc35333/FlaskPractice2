@@ -1,30 +1,37 @@
 {% extends "base.html" %}
 {% block subtitle %}
-    <strong>메뉴 1</strong> - 결과
+<strong>미래 기후 예측</strong> - 결과
 {% endblock %}
 {% block content %}
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-10">
-            <table class="table">
-                <tr>
-                    {% set list = month.split('-') %}
-                    {% if temp == 'temp_min' %}
-                        <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 최저기온: {{result}}</h3>
-                    {% elif temp == 'temp_max' %}
-                        <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 최고기온: {{result}}</h3>
-                    {% elif temp == 'temperature' %}
-                        <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 평균기온: {{result}}</h3>
-                    {% endif %}
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align: center;">
-                        <button class="btn btn-primary" 
-                                onclick="location.href='/menu1'">재실행</button>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    <div class="col-1"></div>
+<div class="row">
+    <!-- <div class="col-1"></div> -->
+    <div class="col-12">
+        <table class="table">
+            <tr>
+                {% set list = month.split('-') %}
+                {% if temp == 'temp_min' %}
+                <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 최저기온: {{result[0]}}</h3>
+                {% elif temp == 'temp_max' %}
+                <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 최고기온: {{result[0]}}</h3>
+                {% elif temp == 'temperature' %}
+                <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 평균기온: {{result[0]}}</h3>
+                {% elif temp == 'rainfall' %}
+                <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 강수량: {{result[0]}}</h3>
+                {% endif %}
+
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button class="btn btn-primary" onclick="location.href='/menu1'">재실행</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="w-90 ml-5">
+                    <iframe src="static/data/map.html" width="800" height="500"></iframe>
+                </td>
+            </tr>
+        </table>
     </div>
+    <!-- <div class="col-1"></div> -->
+</div>
 {% endblock %}

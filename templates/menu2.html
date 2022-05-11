@@ -4,22 +4,25 @@
 {% endblock %}
 {% block content %}
     <div class="row">
-        <div class="col-1"></div>
+        <!-- <div class="col-1"></div> -->
         <div class="col-10">
             <form action="/menu2" method="post">
                 <table class ="table table-borderless">
-                    <td><input type="month" class="form-control"  id="index" name="month" min="2022-06"/>날짜</td>
+                    <td>날짜 선택
+                        <td><input type="month" class="form-control"  id="index" name="month" min="2022-06"/></td>
+                    </td>
                     <td>
                         <select name="temp">
                           <option value="temp_min">최저기온</option>
                           <option value="temp_max">최고기온</option>
                           <option value="temperature">평균기온</option>
-                        </select></td>
+                        </select>
+                    </td>
                     <br>
                     <td><button type="submit" class="btn btn-primary mr-2">실행</button></td>
                 </table>
             </form>
         </div>
-    <div class="col-1"></div>
+    <!-- <div class="col-1"></div> -->
     </div>
 {% endblock %}

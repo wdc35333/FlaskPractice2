@@ -48,12 +48,17 @@
                     <div class="dropdown-divider"></div>
                     <li class="nav-item">
                         <a class="nav-link {% if menu.menu1 %}active{% endif %}" 
-                           href="{% if menu.menu1 %}#{% else %}/menu1{% endif %}">미래 기후 예측</a>
+                           href="{% if menu.menu1 %}/menu1{% else %}/menu1{% endif %}">미래 기후 예측</a>
                     </li>
                     <div class="dropdown-divider"></div>
                     <li class="nav-item">
                         <a class="nav-link {% if menu.menu2 %}active{% endif %}" 
-                           href="{% if menu.menu2 %}#{% else %}/menu2{% endif %}">미래 작물 추천</a>
+                           href="{% if menu.menu2 %}/menu2{% else %}/menu2{% endif %}">미래 작물 추천</a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li class="nav-item">
+                        <a class="nav-link {% if menu.menu3 %}active{% endif %}" 
+                           href="{% if menu.menu3 %}/menu3{% else %}/menu3{% endif %}">folium 테스트</a>
                     </li>
                     <div class="dropdown-divider"></div>
                 </ul>

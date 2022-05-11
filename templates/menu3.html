@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block subtitle %}
+    <strong>미래 작물 추천</strong>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <!-- <div class="col-1"></div> -->
+        <div class="col-10">
+            <form action="/menu3" method="post">
+                <table class ="table table-borderless">
+                    <div class="w-90 ml-5">
+                        <iframe src="static/data/map.html"  width="800" height="500"></iframe>
+                    </div>
+                </table>
+            </form>
+        </div>
+    <!-- <div class="col-1"></div> -->
+    </div>
+{% endblock %}

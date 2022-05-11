@@ -5,8 +5,8 @@ def weather_predict(region, pred_year_month, value):
     pred_year = int(str(pred_year_month).split("-")[0])
     month = int(str(pred_year_month).split("-")[-1])
     
-    df_weather = pd.read_csv('./static/data/기상데이터전처리_열이름변경.csv')
-    df_weather['관측일자'] = pd.to_datetime(df_weather['관측일자'], format='%Y%m%d')
+    df_weather = pd.read_csv('./static/data/기상데이터전처리완료 0510.csv')
+    df_weather['관측일자'] = pd.to_datetime(df_weather['관측일자'], format='%Y-%m-%d')
     df_weather['연'] = df_weather['관측일자'].dt.year
     df_weather['월'] = df_weather['관측일자'].dt.month
     df_weather['일'] = df_weather['관측일자'].dt.day
@@ -21,7 +21,7 @@ def weather_predict(region, pred_year_month, value):
     for i in df_month_mean.index:
         df_tmp = df_weather_region.loc[(df_weather_region['연'] == df_month_mean.loc[i, '연']) & (df_weather_region['월'] == df_month_mean.loc[i, '월'])]
         temp_max = df_tmp['temp_max'].max()
-        temp_min = df_tmp['temp_min'].max()
+        temp_min = df_tmp['temp_min'].min()
         df_month_mean.loc[i, 'temp_max'] = temp_max
         df_month_mean.loc[i, 'temp_min'] = temp_min
 
