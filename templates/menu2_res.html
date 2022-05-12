@@ -1,19 +1,37 @@
 {% extends "base.html" %}
 {% block subtitle %}
-    <strong>미래 작물 추천</strong> - 결과
+<strong>미래 기후 예측 시각화</strong> - 결과
 {% endblock %}
 {% block content %}
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-10">
-            <form action="/menu2" method="post">
-                <table class ="table table-borderless">
-                   <td>
-                    <h3>{{month}} {{temp}}</h3>
-                   </td>
-                </table>
-            </form>
-        </div>
+<div class="row">
     <div class="col-1"></div>
+    <div class="col-10">
+        <table class="table table-borderless">
+            <tr>
+                <tr>
+                    {% set list = month.split('-') %}
+                    {% if temp == 'temp_min' %}
+                    <h3>{{ list[0] }}년 {{ list[1]}}월 최저기온 시각화</h3>
+                    {% elif temp == 'temp_max' %}
+                    <h3>{{ list[0] }}년 {{ list[1]}}월 최고기온 시각화</h3>
+                    {% elif temp == 'temperature' %}
+                    <h3>{{ list[0] }}년 {{ list[1]}}월 평균기온 시각화</h3>
+                    {% endif %}
+                </tr>
+            </tr>
+            <tr>
+                <td class="w-90 ml-5">
+                    <iframe src="static/data/folium_pred_weather.html" width="800" height="500"></iframe>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button class="btn btn-primary" onclick="location.href='/menu2'">재실행</button>
+                </td>
+            </tr>
+        </table>
     </div>
+    <div class="col-1"></div>
+</div>
 {% endblock %}

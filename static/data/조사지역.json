@@ -3,283 +3,7 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              127.60472638427933,
-              38.072648233869785
-            ],
-            [
-              127.60776133059719,
-              38.071674018579536
-            ],
-            [
-              127.65473867484185,
-              38.02576695898344
-            ],
-            [
-              127.65490464895771,
-              38.0272843475771
-            ],
-            [
-              127.73374753570245,
-              38.035814428263734
-            ],
-            [
-              127.73394342807514,
-              38.03607616237089
-            ],
-            [
-              127.77599099169834,
-              38.01389743776739
-            ],
-            [
-              127.77653868086756,
-              38.013597091144185
-            ],
-            [
-              127.77680464554413,
-              38.013645455050394
-            ],
-            [
-              127.77680679204794,
-              38.01364599945677
-            ],
-            [
-              127.77821827512304,
-              38.01390161291351
-            ],
-            [
-              127.78820556176866,
-              37.99429384493769
-            ],
-            [
-              127.85810008725723,
-              38.018823189046856
-            ],
-            [
-              127.84998445340655,
-              38.03881738462732
-            ],
-            [
-              127.84996624162804,
-              38.03970714676426
-            ],
-            [
-              127.85341448275034,
-              38.05051795468947
-            ],
-            [
-              127.85515517661896,
-              38.05230429633902
-            ],
-            [
-              127.90267220658595,
-              38.05059746772935
-            ],
-            [
-              127.90406646899208,
-              38.03033085142509
-            ],
-            [
-              127.93819691986677,
-              38.0142189559451
-            ],
-            [
-              127.95542737502664,
-              38.038681717354734
-            ],
-            [
-              128.0266722331339,
-              38.017796712480774
-            ],
-            [
-              128.02775769398346,
-              38.01662989632316
-            ],
-            [
-              128.02960825528916,
-              38.01465092963498
-            ],
-            [
-              127.99156474624627,
-              37.99104134769293
-            ],
-            [
-              127.98061750639293,
-              37.9560245946445
-            ],
-            [
-              127.99511005992537,
-              37.94120017831497
-            ],
-            [
-              127.94297354008073,
-              37.847717380673835
-            ],
-            [
-              127.880749571477,
-              37.860690469300174
-            ],
-            [
-              127.87160537691756,
-              37.83749890981126
-            ],
-            [
-              127.83226963288861,
-              37.84363809611895
-            ],
-            [
-              127.82488916066619,
-              37.798252559546434
-            ],
-            [
-              127.85739655033578,
-              37.768520783600316
-            ],
-            [
-              127.82834990088885,
-              37.74087966069713
-            ],
-            [
-              127.74645263424765,
-              37.74192034567269
-            ],
-            [
-              127.68158535483602,
-              37.71171483961186
-            ],
-            [
-              127.67782878808474,
-              37.6951459897275
-            ],
-            [
-              127.59616561240232,
-              37.70319433793947
-            ],
-            [
-              127.5599120761837,
-              37.728576643007834
-            ],
-            [
-              127.53840882669513,
-              37.720099166469765
-            ],
-            [
-              127.53734262478201,
-              37.72048692268131
-            ],
-            [
-              127.50811462954897,
-              37.71901946586745
-            ],
-            [
-              127.50706716797781,
-              37.72059387794086
-            ],
-            [
-              127.51400490578338,
-              37.73860299720318
-            ],
-            [
-              127.51568218551617,
-              37.73957689422137
-            ],
-            [
-              127.51687145746531,
-              37.74026739868065
-            ],
-            [
-              127.52266757137158,
-              37.74278823313853
-            ],
-            [
-              127.54498749784119,
-              37.76363171125695
-            ],
-            [
-              127.52753971505571,
-              37.78406721886224
-            ],
-            [
-              127.52567833477512,
-              37.785345279088446
-            ],
-            [
-              127.52632867517762,
-              37.79935066412937
-            ],
-            [
-              127.52675615810597,
-              37.799765445455876
-            ],
-            [
-              127.53244266532597,
-              37.842152266197694
-            ],
-            [
-              127.53669821638387,
-              37.84481158795707
-            ],
-            [
-              127.61705254374384,
-              37.905995787690856
-            ],
-            [
-              127.60660211053394,
-              37.94371269810118
-            ],
-            [
-              127.60373628932362,
-              37.94449064874135
-            ],
-            [
-              127.54737624545533,
-              37.96645830996346
-            ],
-            [
-              127.54021885972703,
-              37.99986793813673
-            ],
-            [
-              127.54031461249298,
-              38.00116171374267
-            ],
-            [
-              127.54480116672471,
-              38.019155346217104
-            ],
-            [
-              127.54476050204117,
-              38.019527438325206
-            ],
-            [
-              127.5786433502747,
-              38.0397670520254
-            ],
-            [
-              127.56558569828945,
-              38.083013464968246
-            ],
-            [
-              127.56610867637458,
-              38.08385920379707
-            ],
-            [
-              127.60472638427933,
-              38.072648233869785
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "KOR_NM": ""
-      }
-    },
-    {
-      "type": "Feature",
+      "id":"0",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -412,13 +136,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 0,
+        "SIG_NUM": 0,
         "ENG_NM": "Ganghwa-gun",
         "KOR_NM": "강화"
       }
     },
     {
       "type": "Feature",
+      "id":"1",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -523,13 +248,13 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 1,
+        "SIG_NUM": 1,
         "ENG_NM": "Geoje-si",
         "KOR_NM": "거제"
       }
-    },
-    {
+    },    {
       "type": "Feature",
+      "id":"2",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -686,13 +411,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 2,
+        "SIG_NUM": 2,
         "ENG_NM": "Geochang-gun",
         "KOR_NM": "거창"
       }
     },
     {
       "type": "Feature",
+      "id":"3",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1493,13 +1219,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 3,
+        "SIG_NUM": 3,
         "ENG_NM": "Gochang-gun",
         "KOR_NM": "고창"
       }
     },
     {
       "type": "Feature",
+      "id":"4",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1702,13 +1429,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 4,
+        "SIG_NUM": 4,
         "ENG_NM": "Goheung-gun",
         "KOR_NM": "고흥"
       }
     },
     {
       "type": "Feature",
+      "id":"5",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1913,13 +1641,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 5,
+        "SIG_NUM": 5,
         "ENG_NM": "Gwangju-si",
         "KOR_NM": "광주"
       }
     },
     {
       "type": "Feature",
+      "id":"6",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -2816,13 +2545,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 6,
+        "SIG_NUM": 6,
         "ENG_NM": "Gumi-si",
         "KOR_NM": "구미"
       }
     },
     {
       "type": "Feature",
+      "id":"7",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -2963,13 +2693,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 7,
+        "SIG_NUM": 7,
         "ENG_NM": "Gunsan-si",
         "KOR_NM": "군산"
       }
     },
     {
       "type": "Feature",
+      "id":"8",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -3066,13 +2797,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 8,
+        "SIG_NUM": 8,
         "ENG_NM": "Geumsan-gun",
         "KOR_NM": "금산"
       }
     },
     {
       "type": "Feature",
+      "id":"9",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -5785,13 +5517,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 9,
+        "SIG_NUM": 9,
         "ENG_NM": "Namwon-si",
         "KOR_NM": "남원"
       }
     },
     {
       "type": "Feature",
+      "id":"10",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -5922,13 +5655,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 10,
+        "SIG_NUM": 10,
         "ENG_NM": "Namhae-gun",
         "KOR_NM": "남해"
       }
     },
     {
       "type": "Feature",
+      "id":"11",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -6969,13 +6703,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 11,
+        "SIG_NUM": 11,
         "ENG_NM": "Daegu",
         "KOR_NM": "대구"
       }
     },
     {
       "type": "Feature",
+      "id":"12",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -7388,13 +7123,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 12,
+        "SIG_NUM": 12,
         "ENG_NM": "Daejeon",
         "KOR_NM": "대전"
       }
     },
     {
       "type": "Feature",
+      "id":"13",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -7515,13 +7251,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 13,
+        "SIG_NUM": 13,
         "ENG_NM": "Dongducheon-si",
         "KOR_NM": "동두천"
       }
     },
     {
       "type": "Feature",
+      "id":"14",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -7594,13 +7331,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 14,
+        "SIG_NUM": 14,
         "ENG_NM": "Donghae-si",
         "KOR_NM": "동해"
       }
     },
     {
       "type": "Feature",
+      "id":"15",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -7681,13 +7419,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 15,
+        "SIG_NUM": 15,
         "ENG_NM": "Mokpo-si",
         "KOR_NM": "목포"
       }
     },
     {
       "type": "Feature",
+      "id":"16",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -7936,13 +7675,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 16,
+        "SIG_NUM": 16,
         "ENG_NM": "Mungyeong-si",
         "KOR_NM": "문경"
       }
     },
     {
       "type": "Feature",
+      "id":"17",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -8131,13 +7871,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 17,
+        "SIG_NUM": 17,
         "ENG_NM": "Miryang-si",
         "KOR_NM": "밀양"
       }
     },
     {
       "type": "Feature",
+      "id":"18",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -8334,13 +8075,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 18,
+        "SIG_NUM": 18,
         "ENG_NM": "Boryeong-si",
         "KOR_NM": "보령"
       }
     },
     {
       "type": "Feature",
+      "id":"19",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -9861,13 +9603,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 19,
+        "SIG_NUM": 19,
         "ENG_NM": "Boeun-gun",
         "KOR_NM": "보은"
       }
     },
     {
       "type": "Feature",
+      "id":"20",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -11928,13 +11671,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 20,
+        "SIG_NUM": 20,
         "ENG_NM": "Bonghwa-gun",
         "KOR_NM": "봉화"
       }
     },
     {
       "type": "Feature",
+      "id":"21",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -13353,13 +13097,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 21,
+        "SIG_NUM": 21,
         "ENG_NM": "Busan",
         "KOR_NM": "부산"
       }
     },
     {
       "type": "Feature",
+      "id":"22",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -13524,13 +13269,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 22,
+        "SIG_NUM": 22,
         "ENG_NM": "Buan-gun",
         "KOR_NM": "부안"
       }
     },
     {
       "type": "Feature",
+      "id":"23",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -13675,13 +13421,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 23,
+        "SIG_NUM": 23,
         "ENG_NM": "Buyeo-gun",
         "KOR_NM": "부여"
       }
     },
     {
       "type": "Feature",
+      "id":"24",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -14054,13 +13801,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 24,
+        "SIG_NUM": 24,
         "ENG_NM": "Sancheong-gun",
         "KOR_NM": "산청"
       }
     },
     {
       "type": "Feature",
+      "id":"25",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -14241,13 +13989,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 25,
+        "SIG_NUM": 25,
         "ENG_NM": "Sangju-si",
         "KOR_NM": "상주"
       }
     },
     {
       "type": "Feature",
+      "id":"26",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -14768,13 +14517,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 26,
+        "SIG_NUM": 26,
         "ENG_NM": "Seogwipo-si",
         "KOR_NM": "서귀포"
       }
     },
     {
       "type": "Feature",
+      "id":"27",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -15163,13 +14913,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 27,
+        "SIG_NUM": 27,
         "ENG_NM": "Seosan-si",
         "KOR_NM": "서산"
       }
     },
     {
       "type": "Feature",
+      "id":"28",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -16106,13 +15857,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 28,
+        "SIG_NUM": 28,
         "ENG_NM": "Seoul",
         "KOR_NM": "서울"
       }
     },
     {
       "type": "Feature",
+      "id":"29",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -16209,13 +15961,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 29,
+        "SIG_NUM": 29,
         "ENG_NM": "Sokcho-si",
         "KOR_NM": "속초"
       }
     },
     {
       "type": "Feature",
+      "id":"30",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -18618,13 +18371,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 30,
+        "SIG_NUM": 30,
         "ENG_NM": "Suwon-si",
         "KOR_NM": "수원"
       }
     },
     {
       "type": "Feature",
+      "id":"31",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -19157,13 +18911,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 31,
+        "SIG_NUM": 31,
         "ENG_NM": "Andong-si",
         "KOR_NM": "안동"
       }
     },
     {
       "type": "Feature",
+      "id":"32",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -19468,13 +19223,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 32,
+        "SIG_NUM": 32,
         "ENG_NM": "Yangpyeong-gun",
         "KOR_NM": "양평"
       }
     },
     {
       "type": "Feature",
+      "id":"33",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -19775,13 +19531,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 33,
+        "SIG_NUM": 33,
         "ENG_NM": "Yeosu-si",
         "KOR_NM": "여수"
       }
     },
     {
       "type": "Feature",
+      "id":"34",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -19902,13 +19659,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 34,
+        "SIG_NUM": 34,
         "ENG_NM": "Yeongdeok-gun",
         "KOR_NM": "영덕"
       }
     },
     {
       "type": "Feature",
+      "id":"35",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -26365,13 +26123,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 35,
+        "SIG_NUM": 35,
         "ENG_NM": "Yeongwol-gun",
         "KOR_NM": "영월"
       }
     },
     {
       "type": "Feature",
+      "id":"36",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -27216,13 +26975,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 36,
+        "SIG_NUM": 36,
         "ENG_NM": "Yeongju-si",
         "KOR_NM": "영주"
       }
     },
     {
       "type": "Feature",
+      "id":"37",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -28971,13 +28731,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 37,
+        "SIG_NUM": 37,
         "ENG_NM": "Yeongcheon-si",
         "KOR_NM": "영천"
       }
     },
     {
       "type": "Feature",
+      "id":"38",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -29204,13 +28965,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 38,
+        "SIG_NUM": 38,
         "ENG_NM": "Wando-gun",
         "KOR_NM": "완도"
       }
     },
     {
       "type": "Feature",
+      "id":"39",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -29247,13 +29009,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 39,
+        "SIG_NUM": 39,
         "ENG_NM": "Ulleung-gun",
         "KOR_NM": "울릉"
       }
     },
     {
       "type": "Feature",
+      "id":"40",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -29766,13 +29529,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 40,
+        "SIG_NUM": 40,
         "ENG_NM": "Ulsan",
         "KOR_NM": "울산"
       }
     },
     {
       "type": "Feature",
+      "id":"41",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -29957,13 +29721,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 41,
+        "SIG_NUM": 41,
         "ENG_NM": "Uljin-gun",
         "KOR_NM": "울진"
       }
     },
     {
       "type": "Feature",
+      "id":"42",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -30412,13 +30177,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 42,
+        "SIG_NUM": 42,
         "ENG_NM": "Wonju-si",
         "KOR_NM": "원주"
       }
     },
     {
       "type": "Feature",
+      "id":"43",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -32395,13 +32161,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 43,
+        "SIG_NUM": 43,
         "ENG_NM": "Uiseong-gun",
         "KOR_NM": "의성"
       }
     },
     {
       "type": "Feature",
+      "id":"44",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -32658,13 +32425,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 44,
+        "SIG_NUM": 44,
         "ENG_NM": "Icheon-si",
         "KOR_NM": "이천"
       }
     },
     {
       "type": "Feature",
+      "id":"45",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -32901,13 +32669,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 45,
+        "SIG_NUM": 45,
         "ENG_NM": "Inje-gun",
         "KOR_NM": "인제"
       }
     },
     {
       "type": "Feature",
+      "id":"46",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -34126,13 +33895,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 46,
+        "SIG_NUM": 46,
         "ENG_NM": "Incheon",
         "KOR_NM": "인천"
       }
     },
     {
       "type": "Feature",
+      "id":"47",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -35273,13 +35043,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 47,
+        "SIG_NUM": 47,
         "ENG_NM": "Imsil-gun",
         "KOR_NM": "임실"
       }
     },
     {
       "type": "Feature",
+      "id":"48",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -39944,13 +39715,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 48,
+        "SIG_NUM": 48,
         "ENG_NM": "Jangsu-gun",
         "KOR_NM": "장수"
       }
     },
     {
       "type": "Feature",
+      "id":"49",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -40355,13 +40127,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 49,
+        "SIG_NUM": 49,
         "ENG_NM": "Jangheung-gun",
         "KOR_NM": "장흥"
       }
     },
     {
       "type": "Feature",
+      "id":"50",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -41856,13 +41629,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 50,
+        "SIG_NUM": 50,
         "ENG_NM": "Jeonju-si",
         "KOR_NM": "전주"
       }
     },
     {
       "type": "Feature",
+      "id":"51",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -42511,13 +42285,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 51,
+        "SIG_NUM": 51,
         "ENG_NM": "Jeongeup-si",
         "KOR_NM": "정읍"
       }
     },
     {
       "type": "Feature",
+      "id":"52",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -43026,13 +42801,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 52,
+        "SIG_NUM": 52,
         "ENG_NM": "Jeju-si",
         "KOR_NM": "제주"
       }
     },
     {
       "type": "Feature",
+      "id":"53",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -44001,246 +43777,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 53,
+        "SIG_NUM": 53,
         "ENG_NM": "Jecheon-si",
         "KOR_NM": "제천"
       }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              126.5934516499878,
-              34.16209880929602
-            ],
-            [
-              126.54694781313894,
-              34.12734442281672
-            ],
-            [
-              126.50561902041186,
-              34.13892547544467
-            ],
-            [
-              126.51660353625398,
-              34.17029674556175
-            ],
-            [
-              126.53952895690574,
-              34.181796817065184
-            ],
-            [
-              126.5934516499878,
-              34.16209880929602
-            ]
-          ],
-          [
-            [
-              126.8918170589496,
-              34.216509929513855
-            ],
-            [
-              126.9220124965665,
-              34.18360748030221
-            ],
-            [
-              126.91500893076187,
-              34.15622381035582
-            ],
-            [
-              126.88148242063332,
-              34.155587469148166
-            ],
-            [
-              126.85312402566846,
-              34.18610386553228
-            ],
-            [
-              126.8918170589496,
-              34.216509929513855
-            ]
-          ],
-          [
-            [
-              126.5652262635495,
-              34.235202673568466
-            ],
-            [
-              126.61425319853275,
-              34.21615211925905
-            ],
-            [
-              126.62199373101006,
-              34.200131006001705
-            ],
-            [
-              126.56101168241018,
-              34.179101399202345
-            ],
-            [
-              126.5530300340229,
-              34.20465906697952
-            ],
-            [
-              126.5652262635495,
-              34.235202673568466
-            ]
-          ],
-          [
-            [
-              126.83475861737206,
-              34.35739600556967
-            ],
-            [
-              126.86835705605006,
-              34.35013320820882
-            ],
-            [
-              126.87863049193729,
-              34.32596536076051
-            ],
-            [
-              126.84116318472887,
-              34.29938058529589
-            ],
-            [
-              126.83475861737206,
-              34.35739600556967
-            ]
-          ],
-          [
-            [
-              126.65406418393142,
-              34.3283438484232
-            ],
-            [
-              126.65451608434317,
-              34.328618762049814
-            ],
-            [
-              126.63946304971643,
-              34.38268287216615
-            ],
-            [
-              126.68491205538969,
-              34.40219432363122
-            ],
-            [
-              126.73171664573954,
-              34.376327646294726
-            ],
-            [
-              126.73172032613752,
-              34.35112989225998
-            ],
-            [
-              126.7556355832565,
-              34.31498132562829
-            ],
-            [
-              126.75209973693259,
-              34.29110417524732
-            ],
-            [
-              126.68896748680511,
-              34.29687990302111
-            ],
-            [
-              126.65406418393142,
-              34.3283438484232
-            ]
-          ],
-          [
-            [
-              126.94355050016081,
-              34.41260107016312
-            ],
-            [
-              126.94175093260358,
-              34.38150699969053
-            ],
-            [
-              126.91811254146744,
-              34.35631955665176
-            ],
-            [
-              126.86416461189948,
-              34.37251413350267
-            ],
-            [
-              126.88495513881078,
-              34.403520276436225
-            ],
-            [
-              126.93051525137228,
-              34.390604966201984
-            ],
-            [
-              126.94355050016081,
-              34.41260107016312
-            ]
-          ],
-          [
-            [
-              126.83427512229476,
-              34.44281295630669
-            ],
-            [
-              126.85366077115735,
-              34.392293444771816
-            ],
-            [
-              126.82811251418116,
-              34.37981410005833
-            ],
-            [
-              126.77239730944663,
-              34.375123268956536
-            ],
-            [
-              126.76373108641697,
-              34.40651396319681
-            ],
-            [
-              126.78715197375695,
-              34.43194522328262
-            ],
-            [
-              126.83427512229476,
-              34.44281295630669
-            ]
-          ],
-          [
-            [
-              127.04560488531905,
-              34.45898731390263
-            ],
-            [
-              127.07539134696763,
-              34.42354395656765
-            ],
-            [
-              127.04013589701127,
-              34.42079878981648
-            ],
-            [
-              127.04560488531905,
-              34.45898731390263
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "KOR_NUM": 54,
-        "ENG_NM": "Wando-gun",
-        "KOR_NM": "완도"
-      }
-    },
-    {
-      "type": "Feature",
+      "id":"54",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -44317,13 +43861,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 55,
+        "SIG_NUM": 54,
         "ENG_NM": "Jindo-gun",
         "KOR_NM": "진도"
       }
     },
     {
       "type": "Feature",
+      "id":"55",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -45380,13 +44925,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 56,
+        "SIG_NUM": 55,
         "ENG_NM": "Jinju-si",
         "KOR_NM": "진주"
       }
     },
     {
       "type": "Feature",
+      "id":"56",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -46471,13 +46017,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 57,
+        "SIG_NUM": 56,
         "ENG_NM": "Changwon-si",
         "KOR_NM": "창원"
       }
     },
     {
       "type": "Feature",
+      "id":"57",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -47596,13 +47143,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 58,
+        "SIG_NUM": 57,
         "ENG_NM": "Cheonan-si",
         "KOR_NM": "천안"
       }
     },
     {
       "type": "Feature",
+      "id":"58",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -47835,13 +47383,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 59,
+        "SIG_NUM": 58,
         "ENG_NM": "Cheorwon-gun",
         "KOR_NM": "철원"
       }
     },
     {
       "type": "Feature",
+      "id":"59",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -56344,13 +55893,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 60,
+        "SIG_NUM": 59,
         "ENG_NM": "Cheongju-si",
         "KOR_NM": "청주"
       }
     },
     {
       "type": "Feature",
+      "id":"60",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -56623,13 +56173,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 61,
+        "SIG_NUM": 60,
         "ENG_NM": "Chuncheon-si",
         "KOR_NM": "춘천"
       }
     },
     {
       "type": "Feature",
+      "id":"61",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -57230,13 +56781,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 62,
+        "SIG_NUM": 61,
         "ENG_NM": "Taebaek-si",
         "KOR_NM": "태백"
       }
     },
     {
       "type": "Feature",
+      "id":"62",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -57357,13 +56909,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 63,
+        "SIG_NUM": 62,
         "ENG_NM": "Tongyeong-si",
         "KOR_NM": "통영"
       }
     },
     {
       "type": "Feature",
+      "id":"63",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -57738,13 +57291,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 64,
+        "SIG_NUM": 63,
         "ENG_NM": "Pohang-si",
         "KOR_NM": "포항"
       }
     },
     {
       "type": "Feature",
+      "id":"64",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -60421,13 +59975,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 65,
+        "SIG_NUM": 64,
         "ENG_NM": "Hapcheon-gun",
         "KOR_NM": "합천"
       }
     },
     {
       "type": "Feature",
+      "id":"65",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -60630,13 +60185,14 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 66,
+        "SIG_NUM": 65,
         "ENG_NM": "Haenam-gun",
         "KOR_NM": "해남"
       }
     },
     {
       "type": "Feature",
+      "id":"66",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -60981,7 +60537,7 @@
         ]
       },
       "properties": {
-        "KOR_NUM": 67,
+        "SIG_NUM": 66,
         "ENG_NM": "Hongcheon-gun",
         "KOR_NM": "홍천"
       }

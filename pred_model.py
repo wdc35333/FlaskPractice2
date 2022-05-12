@@ -5,7 +5,7 @@ def weather_predict(region, pred_year_month, value):
     pred_year = int(str(pred_year_month).split("-")[0])
     month = int(str(pred_year_month).split("-")[-1])
     
-    df_weather = pd.read_csv('./static/data/기상데이터전처리완료 0510.csv')
+    df_weather = pd.read_csv('static/data/기상데이터 0510 index X.csv')
     df_weather['관측일자'] = pd.to_datetime(df_weather['관측일자'], format='%Y-%m-%d')
     df_weather['연'] = df_weather['관측일자'].dt.year
     df_weather['월'] = df_weather['관측일자'].dt.month
@@ -39,3 +39,6 @@ def weather_predict(region, pred_year_month, value):
 
 if __name__ == "__main__":
     weather_predict("속초", '2023-3', 'temp_min')
+
+
+

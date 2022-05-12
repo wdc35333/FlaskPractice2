@@ -18,18 +18,13 @@
                 {% elif temp == 'rainfall' %}
                 <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 강수량: {{result[0]}}</h3>
                 {% endif %}
-
             </tr>
             <tr>
                 <td colspan="2" style="text-align: center;">
                     <button class="btn btn-primary" onclick="location.href='/menu1'">재실행</button>
                 </td>
             </tr>
-            <tr>
-                <td class="w-90 ml-5">
-                    <iframe src="static/data/map.html" width="800" height="500"></iframe>
-                </td>
-            </tr>
+
         </table>
     </div>
     <!-- <div class="col-1"></div> -->
