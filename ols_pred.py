@@ -1,11 +1,13 @@
 import pandas as pd
 import statsmodels.api as sm
+import warnings
+warnings.filterwarnings('ignore')
 
 def OLS_model_predict(region, pred_year_month):
     pred_year = int(str(pred_year_month).split("-")[0])
     month = int(str(pred_year_month).split("-")[-1])
 
-    df_weather = pd.read_csv('기상데이터 0510 index X.csv')
+    df_weather = pd.read_csv('static/data/기상데이터 0510 index X.csv')
     df_tmp_region = df_weather[df_weather['조사지역'] == region]
     df_weather_region = df_tmp_region.groupby(['조사지역', '관측일자']).mean()
     df_weather_region = df_weather_region.reset_index(drop=False)
@@ -22,7 +24,7 @@ def OLS_model_predict(region, pred_year_month):
         df_month_mean.loc[i, 'temp_min'] = temp_min
 
     pred_list = []
-    for value in df_month_mean.columns[2: -2]:
+    for value in df_month_mean.columns[2: -3]:
         df_target = df_month_mean[value]
         X_train2 = pd.DataFrame(df_month_mean[['연']], columns = ['연'])
         y_train2 = df_target.values
@@ -31,11 +33,9 @@ def OLS_model_predict(region, pred_year_month):
         X_train = sm.add_constant(X_train2)
         model = sm.OLS(y_train2, X_train2).fit()
         pred_value = model.predict(pred_year)
-        pred_list.append([region, float(pred_value)])
+
+        pred_list.append(float(pred_value))
     
     # print(f'\t\t\t{region}의 {month}월 {pred_year}의 예측값:')
     # print(pred_list)
     return pred_list
-
-if __name__ == "__main__":
-    OLS_model_predict("속초", '2023-3')
