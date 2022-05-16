@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block subtitle %}
-<strong>미래 기후 예측</strong> - 결과
+<strong style="font-family: NEXON Lv2 Gothic Bold;">미래 기후 예측</strong> - 결과
 {% endblock %}
 {% block content %}
 <div class="row">
@@ -8,16 +8,7 @@
     <div class="col-12">
         <table class="table">
             <tr>
-                {% set list = month.split('-') %}
-                {% if temp == 'temp_min' %}
-                <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 최저기온: {{result[0]}}</h3>
-                {% elif temp == 'temp_max' %}
-                <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 최고기온: {{result[0]}}</h3>
-                {% elif temp == 'temperature' %}
-                <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 평균기온: {{result[0]}}</h3>
-                {% elif temp == 'rainfall' %}
-                <h3>{{region}}의 {{ list[0] }}년 {{ list[1]}}월 강수량: {{result[0]}}</h3>
-                {% endif %}
+                <img src="static/img/weather_graph.png">
             </tr>
             <tr>
                 <td colspan="2" style="text-align: center;">

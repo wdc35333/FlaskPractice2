@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block subtitle %}
-<strong>미래 기후 예측</strong>
+<strong style="font-family: NEXON Lv2 Gothic Bold;">미래 기후 예측</strong>
 {% endblock %}
 {% block content %}
 <div class="row">
@@ -88,7 +88,20 @@
                 <option value="흑산도">흑산도</option>
             </select>
             <td>
-                <input type="month" id="index" name="month" min="2022-06" />
+                <select name="month">
+                    <option value="1">1월</option>
+                    <option value="2">2월</option>
+                    <option value="3">3월</option>
+                    <option value="4">4월</option>
+                    <option value="5">5월</option>
+                    <option value="6">6월</option>
+                    <option value="7">7월</option>
+                    <option value="8">8월</option>
+                    <option value="9">9월</option>
+                    <option value="10">10월</option>
+                    <option value="11">11월</option>
+                    <option value="12">12월</option>
+                </select>
             </td>
             <td>
                 <select name="temp">
