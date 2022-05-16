@@ -1,19 +1,21 @@
 {% extends "base.html" %}
 {% block subtitle %}
-    <strong>미래 작물 추천</strong>
+<strong style="font-family: NEXON Lv2 Gothic Bold;">미래 작물 추천</strong>
 {% endblock %}
 {% block content %}
-    <div class="row">
-        <!-- <div class="col-1"></div> -->
-        <div class="col-10">
-            <form action="/menu3" method="post">
-                <table class ="table table-borderless">
-                    <div class="w-90 ml-5">
-                        <iframe src="static/data/map.html"  width="800" height="500"></iframe>
-                    </div>
-                </table>
-            </form>
-        </div>
+<div class="row">
     <!-- <div class="col-1"></div> -->
+    <div class="col-10">
+        <form action="/menu3" method="post">
+            <label for="year">예측할 년도를 입력하세요:
+                <input type="text" name="year" required pattern="\d{4}" , placeholder="2023~2100", min="2023", max="2100">
+                <span class="validity"></span>
+            </label>
+            <p>
+                <button>Submit</button>
+            </p>
+        </form>
     </div>
+    <!-- <div class="col-1"></div> -->
+</div>
 {% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block subtitle %}
+<strong style="font-family: NEXON Lv2 Gothic Bold;">미래 작물 추천</strong> - 결과
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <table class="table table-borderless">
+            <tr>
+                <h3>{{ year }}년 작물 추천 시각화</h3>
+            </tr>
+            <tr>
+                <td class="w-90 ml-5">
+                    <iframe src="static/data/folium_crop.html" width="800" height="500"></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button class="btn btn-primary" onclick="location.href='/menu3'">재실행</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-1"></div>
+</div>
+{% endblock %}
