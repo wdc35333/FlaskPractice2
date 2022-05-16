@@ -1,3 +1,4 @@
+from cv2 import rotate
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -5,7 +6,7 @@ import numpy as np
 import pandas as pd
 import platform
 
-def weather_temp_month(region, predict_month, temp):
+def temp_graph(region, predict_month, temp):
     pred_df = pd.read_csv('static/data/2022-2100기후예측.csv', encoding='cp949')
     
         
@@ -31,10 +32,11 @@ def weather_temp_month(region, predict_month, temp):
 
     
     x = np.arange(years_count)
-    plt.figure(figsize=(10, 3))
+    plt.figure(figsize=(12, 3))
+    plt.rc('font', size = 6)
     plt.plot(x, temperatures, label=f'{region}의 {temp_name}')
     plt.ylim(temperatures.min()-0.2, temperatures.max()+0.2)
-    plt.xticks(x, years)
+    plt.xticks(x, years, rotation = 45)
     plt.xlabel('년도')
     plt.ylabel('기온')
     plt.legend()
