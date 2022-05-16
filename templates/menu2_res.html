@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block subtitle %}
-<strong>미래 기후 예측 시각화</strong> - 결과
+<strong style="font-family: NEXON Lv2 Gothic Bold;">미래 기후 예측 시각화</strong> - 결과
 {% endblock %}
 {% block content %}
 <div class="row">
@@ -8,16 +8,16 @@
     <div class="col-10">
         <table class="table table-borderless">
             <tr>
-                <tr>
-                    {% set list = month.split('-') %}
-                    {% if temp == 'temp_min' %}
-                    <h3>{{ list[0] }}년 {{ list[1]}}월 최저기온 시각화</h3>
-                    {% elif temp == 'temp_max' %}
-                    <h3>{{ list[0] }}년 {{ list[1]}}월 최고기온 시각화</h3>
-                    {% elif temp == 'temperature' %}
-                    <h3>{{ list[0] }}년 {{ list[1]}}월 평균기온 시각화</h3>
-                    {% endif %}
-                </tr>
+            <tr>
+                {% set list = month.split('-') %}
+                {% if temp == 'temp_min' %}
+                <h3>{{ list[0] }}년 {{ list[1]}}월 최저기온 시각화</h3>
+                {% elif temp == 'temp_max' %}
+                <h3>{{ list[0] }}년 {{ list[1]}}월 최고기온 시각화</h3>
+                {% elif temp == 'temperature' %}
+                <h3>{{ list[0] }}년 {{ list[1]}}월 평균기온 시각화</h3>
+                {% endif %}
+            </tr>
             </tr>
             <tr>
                 <td class="w-90 ml-5">
