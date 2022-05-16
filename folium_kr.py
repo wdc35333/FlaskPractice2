@@ -6,7 +6,7 @@ def folium_visual(pred_year_month, value):
     pred_year = int(str(pred_year_month).split("-")[0])
     month = int(str(pred_year_month).split("-")[-1])
 
-    state_temp = f'static/data/2022-2100예측.csv'
+    state_temp = f'static/data/2022-2100기후예측.csv'
     state_data = pd.read_csv(state_temp, encoding="cp949")
     state_data = state_data[(state_data['month'] == month) & (state_data['year'] == pred_year) ]
 
