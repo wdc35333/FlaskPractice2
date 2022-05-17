@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block subtitle %}
+<strong style="font-family: NEXON Lv2 Gothic Bold;">작물 감성분석</strong>
+{% endblock %}
+{% block content %}
+<div class="row">
+    <!-- <div class="col-1"></div> -->
+    <div class="col-10">
+        <form action="/menu4" method="post">
+            <table class="table table-borderless">
+                <td>작물선택
+                <td><select name="lang">
+                    <option value="영어">영어</option>
+                    <option value="한국어">한국어</option>
+                </select>
+                </td>
+                <td>
+                    <select name="crops">
+                        <option value="밀">밀</option>
+                        <option value="옥수수">옥수수</option>
+                    </select>
+                </td>
+                <br>
+                <td><button type="submit" class="btn btn-primary mr-2">실행</button></td>
+            </table>
+        </form>
+    </div>
+    <!-- <div class="col-1"></div> -->
+</div>
+{% endblock %}

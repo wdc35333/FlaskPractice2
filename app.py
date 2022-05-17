@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    menu = {'home': 1, 'menu1': 0, 'menu2': 0, 'menu3': 0}
+    menu = {'home': 1, 'menu1': 0, 'menu2': 0, 'menu3': 0, 'menu4': 0}
     # client_addr = request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
     # print(f'Connected to {client_addr}')
 
@@ -19,7 +19,7 @@ def index():
 
 @app.route('/menu1', methods=['GET', 'POST'])
 def menu1():    # 미래의 년도를 입력받아 해당 년도의 기후를 예측
-    menu = {'home': 0, 'menu1': 1, 'menu2': 0, 'menu3': 0}
+    menu = {'home': 0, 'menu1': 1, 'menu2': 0, 'menu3': 0, 'menu4': 0}
     if request.method == 'GET':
         return render_template('menu1.html', menu=menu)
     else:
@@ -33,7 +33,7 @@ def menu1():    # 미래의 년도를 입력받아 해당 년도의 기후를 �
 
 @app.route('/menu2', methods=['GET', 'POST'])
 def menu2():    # 미래의 년도를 입력받아 해당 년도의 기후를 예측 후 시각화
-    menu = {'home': 0, 'menu1': 0, 'menu2': 1, 'menu3': 0}
+    menu = {'home': 0, 'menu1': 0, 'menu2': 1, 'menu3': 0, 'menu4': 0}
     if request.method == 'GET':
         return render_template('menu2.html', menu=menu)
     else:
@@ -45,7 +45,7 @@ def menu2():    # 미래의 년도를 입력받아 해당 년도의 기후를 �
 
 @app.route('/menu3', methods=['GET', 'POST'])
 def menu3():     # 미래의 년도를 입력받아 해당 년도의 기후를 예측하고 해당 기후에 맞는 작물 추천 (folium을 이용한 지도 시각화)
-    menu = {'home': 0, 'menu1': 0, 'menu2': 0, 'menu3': 1}
+    menu = {'home': 0, 'menu1': 0, 'menu2': 0, 'menu3': 1, 'menu4': 0}
     if request.method == 'GET':
         return render_template('menu3.html', menu=menu)
     else:
@@ -53,6 +53,15 @@ def menu3():     # 미래의 년도를 입력받아 해당 년도의 기후를 �
         crop_recommend(year)
         return render_template('menu3_res.html', menu=menu, year=year)
 
+@app.route('/menu4', methods=['GET', 'POST'])
+def menu4():     # 미래의 년도를 입력받아 해당 년도의 기후를 예측하고 해당 기후에 맞는 작물 추천 (folium을 이용한 지도 시각화)
+    menu = {'home': 0, 'menu1': 0, 'menu2': 0, 'menu3': 0, 'menu4': 1}
+    if request.method == 'GET':
+        return render_template('menu4.html', menu=menu)
+    else:
+        lang = request.form['lang']
+        crops = request.form['crops']
+        return render_template('menu4_res.html', menu=menu, lang=lang, crops=crops)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)

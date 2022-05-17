@@ -29,14 +29,17 @@ def temp_graph(region, predict_month, temp):
         plt.rc('font', family='Malgun Gothic')
     elif platform.system() == "Linux":  # 리눅스 = 코랩
         plt.rc('font', family='Malgun Gothic')
+    
 
+    matplotlib.rcParams['axes.unicode_minus'] = False
     
     x = np.arange(years_count)
     plt.figure(figsize=(12, 3))
     plt.rc('font', size = 6)
     plt.plot(x, temperatures, label=f'{region}의 {temp_name}')
     plt.ylim(temperatures.min()-0.2, temperatures.max()+0.2)
-    plt.xticks(x, years, rotation = 45)
+    plt.xticks(x, years, rotation = 90)
+    
     plt.xlabel('년도')
     plt.ylabel('기온')
     plt.legend()
