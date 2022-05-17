@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from folium_kr import folium_visual
 from temp_graph import temp_graph
 from crop_recommend import crop_recommend
+import senti
 app = Flask(__name__)
 
 
@@ -61,6 +62,10 @@ def menu4():     # 미래의 년도를 입력받아 해당 년도의 기후를 �
     else:
         lang = request.form['lang']
         crops = request.form['crops']
+        if lang == '한국어':
+            senti.kor_senti(crops)
+        elif lang == '영어':
+            senti.eng_senti(crops)
         return render_template('menu4_res.html', menu=menu, lang=lang, crops=crops)
 
 if __name__ == '__main__':
