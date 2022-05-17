@@ -6,22 +6,19 @@
 <div class="row">
     <!-- <div class="col-1"></div> -->
     <div class="col-10">
-        <form action="/menu2" method="post">
-            <table class="table table-borderless">
-                <td>년월 선택
-                <td><input type="month" class="form-control" id="index" name="month" min="2022-06" max="2100-12" /></td>
-                </td>
-                <td>
-                    <select name="temp">
-                        <option value="temp_min">최저기온</option>
-                        <option value="temp_max">최고기온</option>
-                        <option value="temperature">평균기온</option>
-                    </select>
-                </td>
-                <br>
-                <td><button type="submit" class="btn btn-primary mr-2" style="background-color: rgb(8,32,64); font-family: NEXON Lv2 Gothic Bold;">실행</button></td>
-            </table>
+        <form action="/menu2" method="post" style="font-family: NEXON Lv2 Gothic Light;">
+            <label for="month">년 월 선택:</label>
+            <input type="month" id="index" name="month" min="2022-06" max="2100-12">
+            </label>
+            
+                <select name="temp">
+                    <option value="temp_min">최저기온</option>
+                    <option value="temp_max">최고기온</option>
+                    <option value="temperature">평균기온</option>
+                </select>
+            <button type="submit" class="btn btn-primary mr-2" style="background-color: rgb(8,32,64); font-family: NEXON Lv2 Gothic Bold;">실행</button>
         </form>
+        
     </div>
     <!-- <div class="col-1"></div> -->
 </div>

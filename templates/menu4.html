@@ -1,28 +1,23 @@
 {% extends "base.html" %}
 {% block subtitle %}
-<strong style="font-family: NEXON Lv2 Gothic Bold;">작물 감성분석</strong>
+<strong style="font-family: NEXON Lv2 Gothic Bold;">작물별 선호도 분석</strong>
 {% endblock %}
 {% block content %}
 <div class="row">
     <!-- <div class="col-1"></div> -->
     <div class="col-10">
-        <form action="/menu4" method="post">
-            <table class="table table-borderless">
-                <td>작물선택
-                <td><select name="lang">
-                    <option value="영어">영어</option>
-                    <option value="한국어">한국어</option>
-                </select>
-                </td>
-                <td>
-                    <select name="crops">
-                        <option value="밀">밀</option>
-                        <option value="옥수수">옥수수</option>
-                    </select>
-                </td>
-                <br>
-                <td><button type="submit" class="btn btn-primary mr-2" style="background-color: rgb(8,32,64); font-family: NEXON Lv2 Gothic Bold;">실행</button></td>
-            </table>
+        <form action="/menu4" method="post" style="font-family: NEXON Lv2 Gothic Light;">
+            <td>언어선택:</td>
+            <select name="lang">
+                <option value="영어">영어</option>
+                <option value="한국어">한국어</option>
+            </select>
+            <td>작물선택:</td>
+            <select name="crops">
+                <option value="밀">밀</option>
+                <option value="옥수수">옥수수</option>
+            </select>
+            <button type="submit" class="btn btn-primary mr-2" style="background-color: rgb(8,32,64); font-family: NEXON Lv2 Gothic Bold;">실행</button>
         </form>
     </div>
     <!-- <div class="col-1"></div> -->

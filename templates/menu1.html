@@ -4,10 +4,10 @@
 {% endblock %}
 {% block content %}
 <div class="row">
-    <div class="col-1"></div>
+    <!-- <div class="col-1"></div> -->
     <div class="col-10">
-        <form action="/menu1" method="post">
-            <td>예측지역:</td>
+        <form action="/menu1" method="post"style="font-family: NEXON Lv2 Gothic Light;">
+            <td>예측지역: </td>
             <select name="region">
                 <option value="강화">강화</option>
                 <option value="거제">거제</option>
@@ -81,34 +81,30 @@
                 <option value="해남">해남</option>
                 <option value="홍천">홍천</option>
             </select>
-            <td>
-                <select name="month">
-                    <option value="1">1월</option>
-                    <option value="2">2월</option>
-                    <option value="3">3월</option>
-                    <option value="4">4월</option>
-                    <option value="5">5월</option>
-                    <option value="6">6월</option>
-                    <option value="7">7월</option>
-                    <option value="8">8월</option>
-                    <option value="9">9월</option>
-                    <option value="10">10월</option>
-                    <option value="11">11월</option>
-                    <option value="12">12월</option>
-                </select>
-            </td>
-            <td>
-                <select name="temp">
-                    <option value="temp_min">최저기온</option>
-                    <option value="temp_max">최고기온</option>
-                    <option value="temperature">평균기온</option>
-                </select>
-            </td>
-            <td><button type="submit" class="btn btn-primary mr-2" style="background-color: rgb(8,32,64); font-family: NEXON Lv2 Gothic Bold;">실행</button></td>
-
-            
+            <td>월 선택:</td>
+            <select name="month">
+                <option value="1">1월</option>
+                <option value="2">2월</option>
+                <option value="3">3월</option>
+                <option value="4">4월</option>
+                <option value="5">5월</option>
+                <option value="6">6월</option>
+                <option value="7">7월</option>
+                <option value="8">8월</option>
+                <option value="9">9월</option>
+                <option value="10">10월</option>
+                <option value="11">11월</option>
+                <option value="12">12월</option>
+            </select>
+            <td>조회 기온 종류 선택:</td>
+            <select name="temp">
+                <option value="temp_min">최저기온</option>
+                <option value="temp_max">최고기온</option>
+                <option value="temperature">평균기온</option>
+            </select>
+            <button type="submit" class="btn btn-primary mr-2" style="background-color: rgb(8,32,64); font-family: NEXON Lv2 Gothic Bold;">실행</button>
         </form>
     </div>
-    <div class="col-1"></div>
+    <!-- <div class="col-1"></div> -->
 </div>
 {% endblock %}

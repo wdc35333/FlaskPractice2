@@ -2,6 +2,7 @@ import json
 import folium
 import folium as m
 import pandas as pd
+
 def crop_recommend(year):
     crop_df = pd.read_csv('static/data/2023-2100년_작물예측.csv', encoding='cp949')
     map_df = pd.read_csv('static/data/위도경도.csv', encoding='cp949')
@@ -29,3 +30,5 @@ def crop_recommend(year):
                 marker.add_to(crop_map)
 
     crop_map.save('static/data/folium_crop.html')
+
+    

@@ -39,7 +39,6 @@ def temp_graph(region, predict_month, temp):
     plt.plot(x, temperatures, label=f'{region}의 {temp_name}')
     plt.ylim(temperatures.min()-0.2, temperatures.max()+0.2)
     plt.xticks(x, years, rotation = 90)
-    
     plt.xlabel('년도')
     plt.ylabel('기온')
     plt.legend()
