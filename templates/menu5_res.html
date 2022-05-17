@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block subtitle %}
+<strong style="font-family: NEXON Lv2 Gothic Bold;">인스타그램 작물 태그 워드클라우드</strong> - 결과
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <table class="table table-borderless">
+            <tr>
+            <tr>
+                <h3>{{ crops }} 태그 워드클라우드</h3>
+            </tr>
+            </tr>
+            <tr>
+                <td>
+                    <img src="static/img/wordcloud.png">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button class="btn btn-primary" onclick="location.href='/menu5'" style="background-color: rgb(8,32,64); font-family: NEXON Lv2 Gothic Bold;">재실행</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-1"></div>
+</div>
+{% endblock %}
