@@ -9,7 +9,7 @@ def my_wordcloud(keyword):
     '''
     tag 파일을 넣으면 워드클라우드와 상위 10개 단어 각각 튜플형태(단어, 빈도수)로 출력 
     '''
-    file = f"static/data/instagram_tag_{keyword}.csv"
+    file = f"static/data/crawling/instagram_tag_{keyword}.csv"
     df = pd.read_csv(file)
     df.value_counts()
     text = df.tag.values

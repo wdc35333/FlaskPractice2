@@ -15,7 +15,7 @@ def kor_senti(crops):
     pipe = joblib.load('static/data/model/한글(ai)_pipe.pkl')
     cvect = joblib.load("static/data/model/한글_cvect.pkl")
     nb = joblib.load("static/data/model/한글_nb.pkl")
-    df = pd.read_csv(f"static/data/instagram_{crops}.csv", sep=",")
+    df = pd.read_csv(f"static/data/crawling/instagram_{crops}.csv", sep=",")
     series = df.main_text
     series = series
     series = series.str.replace('[^ㄱ-ㅎㅏ-ㅣ가-힣]', ' ').str.strip()
@@ -69,7 +69,7 @@ def eng_senti(crops):
     pipe = joblib.load('static/data/model/영어_pipe.pkl')
     cvect = joblib.load("static/data/model/영어_cvect.pkl")
     nb = joblib.load("static/data/model/영어_nb.pkl")
-    df = pd.read_csv(f"static/data/instagram_{crops}.csv", sep=",")
+    df = pd.read_csv(f"static/data/crawling/instagram_{crops}.csv", sep=",")
     series = df.main_text
     series = series
     series = series.str.replace('[^A-Za-z]',' ').str.strip()
