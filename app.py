@@ -81,4 +81,4 @@ def menu5():     # 작물을 선택하여 해당 작물의 인스타그램 태�
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=80, debug=True)
+    app.run(host='0.0.0.0',port=5000, debug=True)
