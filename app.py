@@ -63,13 +63,11 @@ def menu4():     # 작물과 언어종류를 선택하여 해당 작물 감성 �
     if request.method == 'GET':
         return render_template('menu4.html', menu=menu)
     else:
-        lang = request.form['lang']
+        # lang = request.form['lang']
         crops = request.form['crops']
-        if lang == '한국어':
-            senti.kor_senti(crops)
-        elif lang == '영어':
-            senti.eng_senti(crops)
-        return render_template('menu4_res.html', menu=menu, lang=lang, crops=crops)
+       
+        senti.eng_senti(crops)
+        return render_template('menu4_res.html', menu=menu, crops=crops)
 
 @app.route('/menu5', methods=['GET', 'POST'])
 def menu5():     # 작물을 선택하여 해당 작물의 인스타그램 태그 워드클라우드 출력
@@ -83,4 +81,4 @@ def menu5():     # 작물을 선택하여 해당 작물의 인스타그램 태�
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0',port=80, debug=True)
